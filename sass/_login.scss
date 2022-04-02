@@ -1,0 +1,101 @@
+.big-picture{
+    width: 600px;
+    height: auto;
+    border-right: 2px solid #c4c4c4;
+}
+
+.signin{
+    width: 58%;
+    height: 42px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    margin-top: 8rem;
+    margin-left: -2rem;
+
+    &_acc{
+        font-size: 12px;
+        margin-top: 2rem;
+        float: right;
+        font-weight: bold;
+
+        &-link{
+            color: #fc7a1e;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.form{
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    width: 90%;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-left: -2rem;
+
+    
+    &-email,
+    &-password{
+        width: 65%;
+        height: 40px;
+        transition: all .3s;
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(black, .5);
+        }
+        &:focus:invalid {
+            border-bottom: 3px solid red;
+        }
+    }
+}
+
+.btn-signin{
+    &,
+    &:link,
+    &:visited{
+        width: 130px;
+        height: 40px;
+        margin-left: 12rem;
+        border-radius: 4px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        background-color: #2f2e41;
+        transition: all .2s;
+        border: none;
+        cursor:pointer;
+    }
+   
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(black, .2);
+
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;        
+        }
+    }
+
+}
+
+
+
+
+

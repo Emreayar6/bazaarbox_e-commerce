@@ -1,0 +1,115 @@
+.createAcc{
+    margin-top: -4rem;
+}
+
+.profile{
+    width: 80px;
+    height: auto;
+    margin: 0 48px 13px 115px;
+    
+}
+
+.form_createAcc{
+    width: 60%;
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    border-radius: 4px;
+    border: solid 1px #c4c4c4;
+    border-bottom: 3px solid transparent;
+    margin-left: 3rem;
+    
+
+    &-name,
+    &-lastName,
+    &-userName,
+    &-phone,
+    &-email,
+    &-password{
+        width: 100%;
+        height: 40px;
+        transition: all .3s;
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(black, .5);
+        }
+        &:focus:invalid {
+            border-bottom: 3px solid red;
+        }
+    }
+}
+
+.btn-createAcc{
+    &,
+    &:link,
+    &:visited{
+        width: 180px;
+        height: 40px;
+        margin-left: 2rem;
+        border-radius: 4px;
+        border: solid 1px #c4c4c4;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        background-color: #2f2e41;
+        transition: all .2s;
+        border: none;
+        cursor:pointer;
+    }
+   
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(black, .2);
+
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;        
+        }
+    }
+
+}
+
+.btn_createAcc{
+    &,
+    &:link,
+    &:visited{
+        width: 190px;        
+        height: 40px;
+        margin-left: 2rem;
+        border-radius: 4px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        background-color: #2f2e41;
+        transition: all .2s;
+        border: none;
+        cursor:pointer;
+    }
+
+}
+
+.btn_signin{
+    margin-left: 5rem;
+    font-size: 12px;
+    font-weight: bold;
+
+    &-link{
+        color: #fc7a1e;
+            &:hover{
+                cursor: pointer;
+            }
+    }
+}
+

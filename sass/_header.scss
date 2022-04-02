@@ -1,0 +1,50 @@
+.Header{
+    
+    width: 100%;
+    height: 100%;
+    margin: 0 0 175px;
+    padding: 0 630px 0 599px;
+    border: solid 1px #c4c4c4;
+
+    display: flex;
+    justify-content: center;
+    
+
+    &-logobox{
+        width: 211px;
+        height: 100px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+    }
+  
+
+    &__logo{
+        width: 25rem;
+        height: auto;
+        justify-self: center;
+        margin-top: 2.5rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__websiteName{
+        justify-self: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+   
+    
+}
