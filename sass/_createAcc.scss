@@ -98,6 +98,16 @@
         cursor:pointer;
     }
 
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(black, .2);
+
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;        
+        }
+    }
+
 }
 
 .btn_signin{
@@ -107,9 +117,10 @@
 
     &-link{
         color: #fc7a1e;
-            &:hover{
-                cursor: pointer;
-            }
+        &:hover{
+            color: #fc7a1e;
+            cursor: pointer;
+        }
     }
 }
 
