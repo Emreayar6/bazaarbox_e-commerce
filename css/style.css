@@ -1,20 +1,26 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit; }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   color: black;
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+}
 
 .Header {
   width: 100%;
@@ -22,40 +28,56 @@ body {
   margin: 0 0 175px;
   padding: 0 630px 0 599px;
   border: solid 1px #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center; }
-  .Header-logobox {
-    width: 211px;
-    height: 100px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center; }
-  .Header__logo {
-    width: 25rem;
-    height: auto;
-    justify-self: center;
-    margin-top: 2.5rem; }
-    .Header__logo:hover {
-      cursor: pointer; }
-  .Header__websiteName {
-    justify-self: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Header-logobox {
+  width: 211px;
+  height: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.Header__logo {
+  width: 25rem;
+  height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 2.5rem;
+}
+
+.Header__logo:hover {
+  cursor: pointer;
+}
+
+.Header__websiteName {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
 
 .big-picture {
   width: 600px;
   height: auto;
-  border-right: 2px solid #c4c4c4; }
+  border-right: 2px solid #c4c4c4;
+}
 
 .signin {
   width: 58%;
@@ -69,16 +91,23 @@ body {
   letter-spacing: normal;
   text-align: left;
   margin-top: 8rem;
-  margin-left: -2rem; }
-  .signin_acc {
-    font-size: 12px;
-    margin-top: 2rem;
-    float: right;
-    font-weight: bold; }
-    .signin_acc-link {
-      color: #fc7a1e; }
-      .signin_acc-link:hover {
-        cursor: pointer; }
+  margin-left: -2rem;
+}
+
+.signin_acc {
+  font-size: 12px;
+  margin-top: 2rem;
+  float: right;
+  font-weight: bold;
+}
+
+.signin_acc-link {
+  color: #fc7a1e;
+}
+
+.signin_acc-link:hover {
+  cursor: pointer;
+}
 
 .form {
   font-size: 1.5rem;
@@ -88,16 +117,25 @@ body {
   border-radius: 4px;
   border: none;
   border-bottom: 3px solid transparent;
-  margin-left: -2rem; }
-  .form-email, .form-password {
-    width: 65%;
-    height: 40px;
-    transition: all .3s; }
-    .form-email:focus, .form-password:focus {
-      outline: none;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
-    .form-email:focus:invalid, .form-password:focus:invalid {
-      border-bottom: 3px solid red; }
+  margin-left: -2rem;
+}
+
+.form-email, .form-password {
+  width: 65%;
+  height: 40px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.form-email:focus, .form-password:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.form-email:focus:invalid, .form-password:focus:invalid {
+  border-bottom: 3px solid red;
+}
 
 .btn-signin, .btn-signin:link, .btn-signin:visited {
   width: 130px;
@@ -114,24 +152,34 @@ body {
   text-align: center;
   color: #fff;
   background-color: #2f2e41;
+  -webkit-transition: all .2s;
   transition: all .2s;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .btn-signin:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn-signin:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-signin:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
 
 .createAcc {
-  margin-top: -4rem; }
+  margin-top: -4rem;
+}
 
 .profile {
   width: 80px;
   height: auto;
-  margin: 0 48px 13px 115px; }
+  margin: 0 48px 13px 115px;
+}
 
 .form_createAcc {
   width: 60%;
@@ -141,16 +189,25 @@ body {
   border-radius: 4px;
   border: solid 1px #c4c4c4;
   border-bottom: 3px solid transparent;
-  margin-left: 3rem; }
-  .form_createAcc-name, .form_createAcc-lastName, .form_createAcc-userName, .form_createAcc-phone, .form_createAcc-email, .form_createAcc-password {
-    width: 100%;
-    height: 40px;
-    transition: all .3s; }
-    .form_createAcc-name:focus, .form_createAcc-lastName:focus, .form_createAcc-userName:focus, .form_createAcc-phone:focus, .form_createAcc-email:focus, .form_createAcc-password:focus {
-      outline: none;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
-    .form_createAcc-name:focus:invalid, .form_createAcc-lastName:focus:invalid, .form_createAcc-userName:focus:invalid, .form_createAcc-phone:focus:invalid, .form_createAcc-email:focus:invalid, .form_createAcc-password:focus:invalid {
-      border-bottom: 3px solid red; }
+  margin-left: 3rem;
+}
+
+.form_createAcc-name, .form_createAcc-lastName, .form_createAcc-userName, .form_createAcc-phone, .form_createAcc-email, .form_createAcc-password {
+  width: 100%;
+  height: 40px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.form_createAcc-name:focus, .form_createAcc-lastName:focus, .form_createAcc-userName:focus, .form_createAcc-phone:focus, .form_createAcc-email:focus, .form_createAcc-password:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.form_createAcc-name:focus:invalid, .form_createAcc-lastName:focus:invalid, .form_createAcc-userName:focus:invalid, .form_createAcc-phone:focus:invalid, .form_createAcc-email:focus:invalid, .form_createAcc-password:focus:invalid {
+  border-bottom: 3px solid red;
+}
 
 .btn-createAcc, .btn-createAcc:link, .btn-createAcc:visited {
   width: 180px;
@@ -168,16 +225,24 @@ body {
   text-align: center;
   color: #fff;
   background-color: #2f2e41;
+  -webkit-transition: all .2s;
   transition: all .2s;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .btn-createAcc:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn-createAcc:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-createAcc:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
 
 .btn_createAcc, .btn_createAcc:link, .btn_createAcc:visited {
   width: 190px;
@@ -194,15 +259,22 @@ body {
   text-align: center;
   color: #fff;
   background-color: #2f2e41;
+  -webkit-transition: all .2s;
   transition: all .2s;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .btn_signin {
   margin-left: 5rem;
   font-size: 12px;
-  font-weight: bold; }
-  .btn_signin-link {
-    color: #fc7a1e; }
-    .btn_signin-link:hover {
-      cursor: pointer; }
+  font-weight: bold;
+}
+
+.btn_signin-link {
+  color: #fc7a1e;
+}
+
+.btn_signin-link:hover {
+  cursor: pointer;
+}
