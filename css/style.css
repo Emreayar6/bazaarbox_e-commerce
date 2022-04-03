@@ -594,3 +594,132 @@ body {
 .item-heart-icon:hover {
   cursor: pointer;
 }
+
+.empty-row {
+  width: 90vw;
+  height: 66px;
+  margin-top: -15rem;
+  margin-left: 8rem;
+  padding: 13px 15px 13px 36px;
+  border-radius: 8px;
+  border: solid 1px #c4c4c4;
+}
+
+.navigation-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.navigation {
+  width: 50vw;
+  height: 80px;
+}
+
+.navigation-bar {
+  width: 30vw;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin-left: -80px;
+  margin-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  flex-direction: column;
+}
+
+.navigation-bar-box {
+  width: 80%;
+  height: 55px;
+  border-radius: 8px;
+  border: solid 1px #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+}
+
+.navigation-bar-box-link {
+  width: 100%;
+  height: 100%;
+  margin-left: 2.5%;
+  margin-top: 6%;
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: black;
+  font-weight: bold;
+}
+
+.navigation-bar-box-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  background-color: #fd7a24;
+  color: white;
+}
+
+.profile-info {
+  height: 75vh;
+  background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 8px;
+  border: solid 1px #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-info-img {
+  width: 8vw;
+  height: auto;
+  margin-top: 2vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.profile-info-forms {
+  width: 50vw;
+  height: 4vh;
+  margin-top: 2vh;
+  margin-left: 6.5vw;
+}
+
+.profile-info-forms-input {
+  margin-top: 1vh;
+}
