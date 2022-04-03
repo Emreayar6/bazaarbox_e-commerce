@@ -1,10 +1,11 @@
-.row{
+.row_item{
     width: 90%;
     height: auto;
     margin-left: 8rem ;
 }
 
-.col{
+
+.item{
     margin: 2rem;
     width: 20%;
     height: 20%;
@@ -12,13 +13,7 @@
     display: flex;
     flex-direction: column; 
     justify-content: center;
-
-    
-}
-
-
-
-.item{
+    border-radius: 8px;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-stretch: normal;
@@ -31,10 +26,9 @@
     flex-direction: column;
 
     &_img{
-        
         width: 100%;
         height: auto;
-        border-radius: 2px;
+        border-radius: 8px;
     }
 
     &-name{
@@ -44,6 +38,9 @@
         height: 20%;
         font-size: 16px;
         font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &-price{
