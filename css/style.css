@@ -497,24 +497,6 @@ body {
   font-weight: normal;
 }
 
-.item-seller-contactSeller {
-  float: right;
-  margin-right: -8%;
-  padding: 0 0.2rem;
-  margin-top: 0.1%;
-  font-weight: bold;
-}
-
-.item-seller-contactSeller-link {
-  font-size: 16px;
-  color: #fc7a1e;
-}
-
-.item-seller-contactSeller-link:hover {
-  color: #fc7a1e;
-  cursor: pointer;
-}
-
 .item-btn-buyitnow {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
