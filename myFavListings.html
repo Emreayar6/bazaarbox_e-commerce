@@ -12,21 +12,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-    <title>My Purchases</title>
+    <title>My Favorite Listings</title>
 </head>
 
 <body>
-
     <div class="Header">
         <div class="Header-logobox">
             <img src="img/logo.png" alt="" class="Header__logo">
         </div>
     </div>
-    
-    <div class="empty-row"></div>
+
+    <div class="filter-search">
+        <div class="filter-search__filter">
+            <input type="checkbox" class="filter-search__filter__checkbox" id="BuyItNow">
+            <label for="BuyItNow" class="filter-label">Buy It Now</label>
+        </div>
+
+        <div class="filter-search__filter">
+            <input type="checkbox" class="filter-search__filter__checkbox" id="Auction" >
+            <label for="Auction" class="filter-label">Auction</label>
+        </div>
+        
+        <div class="filter-search__search">
+            <input type="text" placeholder="Type for search.." class="filter-search__search-input">
+        </div>
+    </div>
 
     <div class="container">
-
         <div class="row navigation-row">
 
             <div class="col navigation">
@@ -43,13 +55,13 @@
                     <li class="navigation-bar-box">
                         <a href="#" class="navigation-bar-box-link">My Listings</a>
                     </li>
-                    <li class="navigation-bar-box active">
+                    <li class="navigation-bar-box ">
                         <a href="#" class="navigation-bar-box-link">My Purchases</a>
                     </li>
                     <li class="navigation-bar-box">
                         <a href="#" class="navigation-bar-box-link">My Bids</a>
                     </li>
-                    <li class="navigation-bar-box">
+                    <li class="navigation-bar-box active">
                         <a href="#" class="navigation-bar-box-link">My Favorite Listings</a>
                     </li>
                 </ul>
@@ -67,7 +79,7 @@
                             <p class="item-id">ID : <span class="item-id-value">2231</span></p>
                             <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
                             <p class="item-seller">Seller : <span class="item-seller-value">Creative Tools <span class="item-seller-contactSeller"><a href="#" class="item-seller-contactSeller-link">Contact Seller</a></span></span></p>
-                            <button class="purchased-item-btn-disabled" disabled>Purchased</button>
+                            <button class="item-btn-buyitnow">Buy It Now!</button>
                         </div>
                         
                         <div class="col item item-1 listings-items-comp">
@@ -95,13 +107,19 @@
                         <div class="w-100"></div>
                         <div class="col item item-1 listings-items-comp">
                         
-                            <img src="img/analog-cam.jpg" alt="Analog Camera" class="item_img">
-                            <p class="item-name">CMEHA SMENA <span class="item-heart"><img src="img/heart.svg" alt="Add Favorite" class="item-heart-icon"></span></p>
-                            <p class="item-price">Price : ₺730</p>
+                            <img src="img/keyboard.png" alt="Keyboard" class="item_img">
+                            <p class="item-name">KY-1283 Keyboard 
+                                <span class="item-heart"><img src="img/heart.svg" alt="Add Favorite" class="item-heart-icon"></span>
+                            </p>
+                            <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
+                            <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
                             <p class="item-id">ID : <span class="item-id-value">2231</span></p>
                             <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
-                            <p class="item-seller">Seller : <span class="item-seller-value">Creative Tools <span class="item-seller-contactSeller"><a href="#" class="item-seller-contactSeller-link">Contact Seller</a></span></span></p>
-                            <button class="purchased-item-btn-disabled" disabled>Purchased</button>
+                            <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster <span class="item-seller-contactSeller"><a href="#" class="item-seller-contactSeller-link">Contact Seller</a></span></span></p>
+                            <div class="item-enterPrice">
+                                <input type="text" placeholder="Enter Bid.." class="item-enterPrice-input">
+                                <span><button class="item-enterBid">Bid</button></span>
+                            </div>
                         </div>
                         <div class="col item item-1 listings-items-comp">
                         
@@ -111,17 +129,21 @@
                             <p class="item-id">ID : <span class="item-id-value">2231</span></p>
                             <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
                             <p class="item-seller">Seller : <span class="item-seller-value">Creative Tools <span class="item-seller-contactSeller"><a href="#" class="item-seller-contactSeller-link">Contact Seller</a></span></span></p>
-                            <button class="purchased-item-btn-disabled" disabled>Purchased</button>
+                            <button class="item-btn-buyitnow">Buy It Now!</button>
                         </div>
+                        
                         <div class="col item item-1 listings-items-comp">
                             
-                            <img src="img/analog-cam.jpg" alt="Analog Camera" class="item_img">
-                            <p class="item-name">CMEHA SMENA <span class="item-heart"><img src="img/heart.svg" alt="Add Favorite" class="item-heart-icon"></span></p>
-                            <p class="item-price">Price : ₺730</p>
+                            <img src="img/keyboard.png" alt="Keyboard" class="item_img">
+                            <p class="item-name">KY-1283 Keyboard 
+                                <span class="item-heart"><img src="img/heart.svg" alt="Add Favorite" class="item-heart-icon"></span>
+                            </p>
+                            <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
+                            <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
                             <p class="item-id">ID : <span class="item-id-value">2231</span></p>
                             <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
-                            <p class="item-seller">Seller : <span class="item-seller-value">Creative Tools <span class="item-seller-contactSeller"><a href="#" class="item-seller-contactSeller-link">Contact Seller</a></span></span></p>
-                            <button class="purchased-item-btn-disabled" disabled>Purchased</button>
+                            <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster <span class="item-seller-contactSeller"><a href="#" class="item-seller-contactSeller-link">Contact Seller</a></span></span></p>
+                            <button class="purchased-item-btn-disabled" disabled>Received</button>
                         </div>
 
                     </div>
@@ -130,4 +152,5 @@
             </div>
         </div>
     </div>
+
 </body>

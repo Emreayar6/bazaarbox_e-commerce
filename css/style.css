@@ -295,10 +295,11 @@ body {
 }
 
 .filter-search {
-  width: 90%;
+  width: 87%;
   height: auto;
   margin-top: -15rem;
-  margin-left: 8rem;
+  margin-left: 10rem;
+  margin-right: 20rem;
   padding: 13px 15px 13px 36px;
   border-radius: 8px;
   border: solid 1px #c4c4c4;
@@ -387,7 +388,7 @@ body {
 .item {
   margin: 2rem;
   width: 20%;
-  height: 20%;
+  height: 30%;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,7 +415,7 @@ body {
 
 .item_img {
   width: 100%;
-  height: auto;
+  height: 140px;
   border-radius: 8px;
 }
 
@@ -475,15 +476,30 @@ body {
   font-size: 12px;
   font-weight: bold;
   margin-top: -2.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .item-seller-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: normal;
 }
 
 .item-seller-contactSeller {
   float: right;
-  margin-right: -4%;
+  margin-right: -8%;
   padding: 0 0.2rem;
   margin-top: 0.1%;
   font-weight: bold;
@@ -503,8 +519,11 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 96%;
-  height: 41px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 95%;
+  height: 35px;
   border-radius: 4px;
   margin-bottom: 4%;
   border: solid 1px #c4c4c4;
@@ -564,7 +583,7 @@ body {
 
 .item-enterPrice-input {
   width: 80%;
-  height: 41px;
+  height: 35px;
   border-radius: 4px;
   border: solid 1px #c4c4c4;
   font-size: 16px;
@@ -576,9 +595,9 @@ body {
 
 .item-enterBid {
   width: 16%;
-  height: 41px;
+  height: 35px;
   border-radius: 4px;
-  margin-bottom: 4%;
+  margin-bottom: 1%;
   margin-left: -1.1%;
   border: solid 1px #c4c4c4;
   background-color: #2f2e41;
@@ -866,7 +885,7 @@ body {
 
 .listings {
   width: 100vw;
-  height: 100vh;
+  height: 800px;
   margin-top: 2rem;
   margin-bottom: 8rem;
 }
@@ -898,7 +917,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   width: 96%;
-  height: 41px;
+  height: 35px;
   border-radius: 4px;
   margin-bottom: 4%;
   border: solid 1px #c4c4c4;

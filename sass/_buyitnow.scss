@@ -8,7 +8,7 @@
 .item{
     margin: 2rem;
     width: 20%;
-    height: 20%;
+    height: 30%;
     background-color: white;
     display: flex;
     flex-direction: column; 
@@ -27,7 +27,7 @@
 
     &_img{
         width: 100%;
-        height: auto;
+        height: 140px;
         border-radius: 8px;
     }
 
@@ -86,14 +86,20 @@
         font-size: 12px;
         font-weight: bold;
         margin-top: -2.5%;
+        display: flex;
+        align-items: center;
 
         &-value{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             font-weight: normal;
         }
 
         &-contactSeller{
+            
             float: right;
-            margin-right: -4%;
+            margin-right: -8%;
             padding: 0 0.2rem;
             margin-top: 0.1%;
             font-weight: bold;
@@ -114,8 +120,9 @@
 
     &-btn-buyitnow{
         align-self: center;
-        width: 96%;
-        height: 41px;
+        justify-content: center;
+        width: 95%;
+        height: 35px;
         border-radius: 4px;
         margin-bottom: 4%;
         border: solid 1px #c4c4c4;
