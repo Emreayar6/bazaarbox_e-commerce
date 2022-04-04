@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Auction</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="/img/logo.png" alt="bazzarbox logo">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="top-band">
+
+        </div>
+        <div class="content">
+            <div class="left-navigation">
+                <a class="nav-item" href="#">Profile</a>
+                <a class="nav-item" href="#">My Messages</a>
+                <a class="nav-item" href="#">Create New Listings</a>
+                <a class="nav-item" href="#">My Listings</a>
+                <a class="nav-item" href="#">My Purchases</a>
+                <a class="nav-item" href="#">My Bids</a>
+                <a class="nav-item" href="#">My Favorite Listings</a>
+            </div>   
+            <div class="right-content">
+                <div class="create-item-container">
+                    <div class="switch">
+                        <a id="buyItNowButton" href="#">Buy it Now</a>
+                        <a id="AuctionButton" class="active" href="#">Auction</a>
+                    </div>
+                    <select name="Category" id="categories">
+                        <option value="none">Category</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Television">Television</option>
+                        <option value="Phone">Phone</option>
+                    </select>
+                    <select name="Condition" id="condition">
+                        <option value="none">Condition</option>
+                        <option value="used">Used</option>
+                        <option value="New">New Brand</option>
+                    </select>
+                    <input type="text" placeholder="Brand">
+                    <input type="text" placeholder="Upload">
+                    <textarea type="text" placeholder="Description" rows="3"></textarea>
+                    <input type="text" placeholder="Price">
+                    <button class="btn-create">Create Item</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
