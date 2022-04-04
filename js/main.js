@@ -10,6 +10,13 @@ x.forEach(i => {
 
         i.classList.add('active');
 
+        let priceInp = document.querySelector('#priceInput');
+        let bidInp = document.querySelector('#bidInput');
+        let selector = document.querySelector('#selector');
+
+
+        buttonAuction.classList.contains('active') ? bidInp.classList.add('active') & priceInp.classList.remove('active') & selector.classList.add('right') : priceInp.classList.add('active') & bidInp.classList.remove('active')& selector.classList.remove('right');
+
 
     })
 })

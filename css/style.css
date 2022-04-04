@@ -112,6 +112,11 @@ body {
   border-top-left-radius: 8px;
 }
 
+.container .content .left-navigation .nav-item.active {
+  background-color: #fd7a24;
+  color: white;
+}
+
 .container .content .right-content {
   width: 845px;
   display: -webkit-box;
@@ -123,11 +128,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #c4c4c4;
 }
 
 .container .content .right-content .create-item-container {
-  border: 1px solid #c4c4c4;
-  background-color: white;
   width: 407px;
   height: 564px;
   display: -webkit-box;
@@ -181,10 +187,27 @@ body {
   border-radius: 30px;
   height: 27px;
   color: #2f2e41;
+  z-index: 2;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+}
+
+.container .content .right-content .create-item-container .switch #selector {
+  width: 107px;
+  border-radius: 30px;
+  height: 27px;
+  background-color: #2f2e41;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.container .content .right-content .create-item-container .switch #selector.right {
+  -webkit-transform: translateX(104px);
+          transform: translateX(104px);
 }
 
 .container .content .right-content .create-item-container .switch .active {
-  background-color: #2f2e41;
   color: #f6f6f6;
 }
 
@@ -196,6 +219,14 @@ body {
   padding-left: 10px;
 }
 
+.container .content .right-content .create-item-container #priceInput {
+  display: none;
+}
+
+.container .content .right-content .create-item-container #bidInput {
+  display: none;
+}
+
 .container .content .right-content .create-item-container input {
   width: 318px;
   height: 40px;
@@ -203,6 +234,10 @@ body {
   padding: 0;
   border: 1px solid #c4c4c4;
   padding-left: 10px;
+}
+
+.container .content .right-content .create-item-container input.active {
+  display: block !important;
 }
 
 .container .content .right-content .create-item-container textarea {

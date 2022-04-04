@@ -31,7 +31,7 @@
             <div class="left-navigation">
                 <a class="nav-item" href="#">Profile</a>
                 <a class="nav-item" href="#">My Messages</a>
-                <a class="nav-item" href="#">Create New Listings</a>
+                <a class="nav-item active" href="#">Create New Listings</a>
                 <a class="nav-item" href="#">My Listings</a>
                 <a class="nav-item" href="#">My Purchases</a>
                 <a class="nav-item" href="#">My Bids</a>
@@ -40,8 +40,10 @@
             <div class="right-content">
                 <div class="create-item-container">
                     <div class="switch">
-                        <a id="buyItNowButton" href="#">Buy it Now</a>
-                        <a id="AuctionButton" class="active" href="#">Auction</a>
+                        <div id="selector">
+                        </div>
+                        <a id="buyItNowButton" class="active" href="javascript:void(0);">Buy it Now</a>
+                        <a id="AuctionButton"  href="javascript:void(0);">Auction</a>
                     </div>
                     <select name="Category" id="categories">
                         <option value="none">Category</option>
@@ -52,12 +54,13 @@
                     <select name="Condition" id="condition">
                         <option value="none">Condition</option>
                         <option value="used">Used</option>
-                        <option value="New">New Brand</option>
+                        <option value="New">New</option>
                     </select>
                     <input type="text" placeholder="Brand">
                     <input type="text" placeholder="Upload">
                     <textarea type="text" placeholder="Description" rows="3"></textarea>
-                    <input type="text" placeholder="Price">
+                    <input class="active" id="priceInput" type="text" placeholder="Price">
+                    <input id="bidInput" type="text" placeholder="Initial Bid">
                     <button class="btn-create">Create Item</button>
                 </div>
             </div>
