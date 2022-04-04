@@ -297,7 +297,7 @@ body {
 .filter-search {
   width: 90%;
   height: auto;
-  margin-top: -10rem;
+  margin-top: -15rem;
   margin-left: 8rem;
   padding: 13px 15px 13px 36px;
   border-radius: 8px;
@@ -323,6 +323,9 @@ body {
 }
 
 .filter-search__search-input {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 330px;
   height: 40px;
   margin-right: 3rem;
@@ -677,7 +680,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: black;
+  color: #2f2e41;
   font-weight: bold;
 }
 
@@ -904,4 +907,61 @@ body {
   font-weight: 300;
   text-align: center;
   color: #2f2e41;
+}
+
+.filter-searchh {
+  width: 90%;
+  height: auto;
+  margin-top: -15rem;
+  margin-left: 8rem;
+  padding: 13px 15px 13px 36px;
+  border-radius: 8px;
+  border: solid 1px #c4c4c4;
+}
+
+.filter-searchh-bids {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.filter-searchh-bids-input {
+  width: 330px;
+  height: 40px;
+  margin-right: 3rem;
+  border: solid 1px #c4c4c4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  border-radius: 4px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  background-color: #f6f6f6;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.filter-searchh-bids-input:focus {
+  border: none;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.filter-searchh-bids {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }

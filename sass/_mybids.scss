@@ -1,4 +1,4 @@
-.filter-search{
+.filter-searchh{
     width: 90%;
     height: auto;
     margin-top: -15rem;
@@ -6,18 +6,13 @@
     padding: 13px 15px 13px 36px;
     border-radius: 8px;
     border: solid 1px #c4c4c4;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    
-    &__search{
-        width: 80%;
+
+    &-bids{
+        width: 100%;
         display: flex;
         flex-direction: row-reverse;
 
-    
         &-input{
-            align-items: flex-end;
             width: 330px;
             height: 40px;
             margin-right: 3rem;
@@ -33,41 +28,21 @@
             text-align: left;
             background-color: #f6f6f6;
             transition: all .2s;
-
+    
             &:focus{
                 border: none;
                 box-shadow: 0 1rem 2rem rgba(black, .2);
     
             }
-
         }
-
     }
+}
 
-    &__filter{
-        display: flex;
-        justify-content: center;
+.filter-searchh-bids{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row-reverse;
 
-        &__checkbox{
-            transform: scale(1.3);
-        }
-
-
-    }
     
 }
-
-.filter-label{
-    width: 10rem;
-    margin-left: 1.3rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-}
-

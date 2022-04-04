@@ -12,39 +12,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-    <title>My Listings - Auction</title>
+    <title>My Bids</title>
 </head>
 
 <body>
-    
     <div class="Header">
         <div class="Header-logobox">
             <img src="img/logo.png" alt="" class="Header__logo">
         </div>
     </div>
 
-    <div class="filter-search">
-        <div class="filter-search__filter">
-            <input type="checkbox" class="filter-search__filter__checkbox" id="BuyItNow">
-            <label for="BuyItNow" class="filter-label">Buy It Now</label>
-        </div>
-
-        <div class="filter-search__filter">
-            <input type="checkbox" class="filter-search__filter__checkbox" id="Auction"  checked>
-            <label for="Auction" class="filter-label">Auction</label>
-        </div>
-        
-        <div class="filter-search__search">
-            <input type="text" placeholder="Type for search.." class="filter-search__search-input">
+    <div class="filter-searchh">
+        <div class="filter-searchh-bids">
+            <input type="text" placeholder="Type for search.." class="filter-searchh-bids-input">
         </div>
     </div>
 
     <div class="container">
-
         <div class="row navigation-row">
 
             <div class="col navigation">
-                
                 <ul class="navigation-bar">
                     <li class="navigation-bar-box">
                         <a href="#" class="navigation-bar-box-link ">My Profile</a>
@@ -55,13 +42,13 @@
                     <li class="navigation-bar-box">
                         <a href="#" class="navigation-bar-box-link">Create New Listing</a>
                     </li>
-                    <li class="navigation-bar-box active">
+                    <li class="navigation-bar-box ">
                         <a href="#" class="navigation-bar-box-link ">My Listings</a>
                     </li>
                     <li class="navigation-bar-box">
                         <a href="#" class="navigation-bar-box-link">My Purchases</a>
                     </li>
-                    <li class="navigation-bar-box">
+                    <li class="navigation-bar-box active">
                         <a href="#" class="navigation-bar-box-link">My Bids</a>
                     </li>
                     <li class="navigation-bar-box">
@@ -102,10 +89,7 @@
                             <p class="item-id">ID : <span class="item-id-value">2231</span></p>
                             <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
                             <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster <span class="item-seller-contactSeller"><a href="#" class="item-seller-contactSeller-link">Contact Seller</a></span></span></p>
-                            <div class="item-enterPrice">
-                                <input type="text" placeholder="Enter Bid.." class="item-enterPrice-input">
-                                <span><button class="item-enterBid">Bid</button></span>
-                            </div>
+                            <button class="purchased-item-btn-disabled" disabled>Received</button>
                         </div>
 
                         <div class="col item item-1 listings-items-comp">
@@ -169,10 +153,7 @@
                             <p class="item-id">ID : <span class="item-id-value">2231</span></p>
                             <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
                             <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster <span class="item-seller-contactSeller"><a href="#" class="item-seller-contactSeller-link">Contact Seller</a></span></span></p>
-                            <div class="item-enterPrice">
-                                <input type="text" placeholder="Enter Bid.." class="item-enterPrice-input">
-                                <span><button class="item-enterBid">Bid</button></span>
-                            </div>
+                            <button class="purchased-item-btn-disabled" disabled>Received</button>
                         </div>
 
                     </div>
@@ -182,12 +163,8 @@
             
             
             </div>
-        
-        
+
+            
         </div>
-    
-    
     </div>
-
-
 </body>
