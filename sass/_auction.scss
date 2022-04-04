@@ -38,6 +38,11 @@
             height: 41px;
             border-radius: 4px;
             border: solid 1px #c4c4c4;
+            font-size: 16px;
+            
+            &:focus:invalid {
+                border-bottom: 3px solid red;
+            }
         }
     }
 
