@@ -966,3 +966,74 @@ body {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+
+.create {
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.create-buyitnow {
+  width: 80rem;
+  height: 80%;
+  border: solid 1px #c4c4c4;
+  border-radius: 8px;
+  margin-bottom: 4vh;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.create-buyitnow-choice {
+  margin-top: 2rem;
+  background-color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.create-auction {
+  width: 80rem;
+  height: 80%;
+  border: solid 1px #c4c4c4;
+  border-radius: 8px;
+  margin-bottom: 4vh;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: white;
+}
+
+.box {
+  width: 107px;
+  height: 27px;
+  margin: 0 8px 0 0;
+  padding: 3px 13px 7px;
+  border-radius: 44px;
+  text-align: center;
+}
+
+.chosen {
+  background-color: #2f2e41;
+  color: #c4c4c4;
+}
