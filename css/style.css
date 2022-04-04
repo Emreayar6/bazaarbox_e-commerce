@@ -855,3 +855,32 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.listings {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+
+.listings-items {
+  width: 110%;
+  height: 100%;
+  margin-top: -2vh;
+  margin-left: -4rem;
+}
+
+.listings-items-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.listings-items-comp {
+  width: 90vw;
+  margin: 1.3rem;
+  border: solid 1px #c4c4c4;
+  border-radius: 8px;
+}
