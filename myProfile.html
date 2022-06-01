@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +18,79 @@
 </head>
 
 <body>
-    <div class="Header">
-        <div class="Header-logobox">
-            <img src="img/logo.png" alt="" class="Header__logo">
+    <div class="header">
+        <div class="logo-container">
+            <a href="myProfile.html"><img src="/img/logo.png" alt="bazzarbox logo"></a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="top-band">
+
+        </div>
+        <div class="content">
+            <div class="left-navigation">
+                <a class="nav-item active" href="#">Profile</a>
+                <a class="nav-item" href="listings.html">All Listings</a>
+                <a class="nav-item" href="myMessages.html">My Messages</a>
+                <a class="nav-item " href="create-new-listing.html">Create New Listings</a>
+                <a class="nav-item" href="myListings_buyitnow.html">My Listings</a>
+                <a class="nav-item" href="myPurchases.html">My Purchases</a>
+                <a class="nav-item" href="myBids.html">My Bids</a>
+                <a class="nav-item" href="myFavListings.html">My Favorite Listings</a>
+                <a class="nav-item" href="index.html">Sign Out</a>
+            </div>
+
+            <div class="right-content profile-info">
+                <img src="img/avatar1.png" alt="Profil Picture" class="profile-info-img">
+
+                <div class="profile-info-forms">
+                    <div class="form_createAcc profile-info-forms-input">
+                        <input type="text" class="form_createAcc-name" placeholder="Mehmet Emre" id="Fname" disabled>
+                    </div>
+
+                    <div class="form_createAcc profile-info-forms-input">
+                        <input type="text" class="form_createAcc-lastName" placeholder="Ayar" id="Lname" disabled>
+                    </div>
+
+                    <div class="form_createAcc profile-info-forms-input">
+                        <input type="text" class="form_createAcc-userName" placeholder="FastSeller" id="Uname" disabled>
+                    </div>
+
+                    <div class="form_createAcc profile-info-forms-input">
+                        <input type="tel" class="form_createAcc-phone" placeholder="5552223333"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" disabled>
+                    </div>
+
+                    <div class="form_createAcc profile-info-forms-input">
+                        <input type="email" class="form_createAcc-email" placeholder="example@gmail.com" id="email"
+                            disabled>
+                    </div>
+
+                    <div class="form_createAcc profile-info-forms-input">
+                        <input type="password" class="form_createAcc-password" placeholder="******" id="password"
+                            disabled>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+
+</html>
+
+
+<!-- 
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="/img/logo.png" alt="bazzarbox logo">
         </div>
     </div>
 
@@ -89,3 +161,5 @@
     </div>
 
 </body>
+
+-->

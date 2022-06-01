@@ -20,3 +20,20 @@ x.forEach(i => {
 
     })
 })
+
+let creatAccount = document.querySelector('#createAccountButton');
+let signInButton = document.querySelector('#switchSignIn');
+let createArea = document.querySelector('.createAcc');
+let SignInArea = document.querySelector('.signinEra');
+
+creatAccount.addEventListener('click', ()=> {
+    
+    createArea.classList.add('activeEra');
+    SignInArea.classList.remove('activeEra');
+})
+
+signInButton.addEventListener('click',() =>{
+        
+    createArea.classList.remove('activeEra');
+    SignInArea.classList.add('activeEra');
+})

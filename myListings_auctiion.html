@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +18,9 @@
 </head>
 
 <body>
-    
-    <div class="Header">
-        <div class="Header-logobox">
-            <img src="img/logo.png" alt="" class="Header__logo">
+    <div class="header">
+        <div class="logo-container">
+            <a href="myProfile.html"><img src="/img/logo.png" alt="bazzarbox logo"></a>
         </div>
     </div>
 
@@ -30,164 +31,158 @@
         </div>
 
         <div class="filter-search__filter">
-            <input type="checkbox" class="filter-search__filter__checkbox" id="Auction"  checked>
+            <input type="checkbox" class="filter-search__filter__checkbox" id="Auction" checked>
             <label for="Auction" class="filter-label">Auction</label>
         </div>
-        
+
         <div class="filter-search__search">
             <input type="text" placeholder="Type for search.." class="filter-search__search-input">
         </div>
     </div>
 
     <div class="container">
+        <div class="content">
+            <div class="left-navigation left-navigation-new">
+                <a class="nav-item" href="myProfile.html">Profile</a>
+                <a class="nav-item" href="listings.html">All Listings</a>
+                <a class="nav-item" href="myMessages.html">My Messages</a>
+                <a class="nav-item" href="create-new-listing.html">Create New Listings</a>
+                <a class="nav-item active" href="#">My Listings</a>
+                <a class="nav-item" href="myPurchases.html">My Purchases</a>
+                <a class="nav-item" href="myBids.html">My Bids</a>
+                <a class="nav-item" href="myFavListings.html">My Favorite Listings</a>
 
-        <div class="row navigation-row">
-
-            <div class="col navigation">
-                
-                <ul class="navigation-bar">
-                    <li class="navigation-bar-box">
-                        <a href="myProfile.html" class="navigation-bar-box-link ">My Profile</a>
-                    </li>
-                    <li class="navigation-bar-box">
-                        <a href="myMessages.html" class="navigation-bar-box-link">My Messages</a>
-                    </li>
-                    <li class="navigation-bar-box">
-                        <a href="#" class="navigation-bar-box-link">Create New Listing</a>
-                    </li>
-                    <li class="navigation-bar-box active">
-                        <a href="#" class="navigation-bar-box-link ">My Listings</a>
-                    </li>
-                    <li class="navigation-bar-box">
-                        <a href="myPurchases.html" class="navigation-bar-box-link">My Purchases</a>
-                    </li>
-                    <li class="navigation-bar-box">
-                        <a href="myBids.html" class="navigation-bar-box-link">My Bids</a>
-                    </li>
-                    <li class="navigation-bar-box">
-                        <a href="myFavListings.html" class="navigation-bar-box-link">My Favorite Listings</a>
-                    </li>
-                </ul>
+                <a class="nav-item" href="index.html">Sign Out</a>
             </div>
 
-            <div class="col-8 listings">
-                <div class="container listings-items">
-                    <div class="row listing-items-row">
+            <div class="right-content right-content-new">
 
-                        <div class="col item item-1 listings-items-comp">
-                        
-                            <img src="img/keyboard.png" alt="Keyboard" class="item_img">
-                            <p class="item-name">KY-1283 Keyboard 
-                                <span class="item-heart"><img src="img/heart.svg" alt="Add Favorite" class="item-heart-icon"></span>
-                            </p>
-                            <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
-                            <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
-                            <p class="item-id">ID : <span class="item-id-value">2231</span></p>
-                            <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
-                            <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
-                            <div class="item-enterPrice">
-                                <input type="text" placeholder="Enter Bid.." class="item-enterPrice-input">
-                                <span><button class="item-enterBid">Bid</button></span>
-                            </div>
-                        </div>
+                <div class="bid">
+                    <img src="img/keyboard.png" alt="Keyboard" class="item_img">
+                    <p class="item-name">KY-1283 Keyboard</p>
+                    <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
+                    <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
+                    <div class="item-display">
 
-                        <div class="col item item-1 listings-items-comp">
-                        
-                            <img src="img/keyboard.png" alt="Keyboard" class="item_img">
-                            <p class="item-name">KY-1283 Keyboard 
-                                <span class="item-heart"><img src="img/heart.svg" alt="Add Favorite" class="item-heart-icon"></span>
-                            </p>
-                            <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
-                            <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
-                            <p class="item-id">ID : <span class="item-id-value">2231</span></p>
-                            <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
-                            <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
-                            <div class="item-enterPrice">
-                                <input type="text" placeholder="Enter Bid.." class="item-enterPrice-input">
-                                <span><button class="item-enterBid">Bid</button></span>
-                            </div>
-                        </div>
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="#"><img src="img/edit.png" alt="Edit Listings"
+                                        class="item-edit-icon"></a></span>
 
-                        <div class="col item item-1 listings-items-comp">
-                        
-                            <img src="img/keyboard.png" alt="Keyboard" class="item_img">
-                            <p class="item-name">KY-1283 Keyboard 
-                                <span class="item-heart"><img src="img/heart.svg" alt="Add Favorite" class="item-heart-icon"></span>
-                            </p>
-                            <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
-                            <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
-                            <p class="item-id">ID : <span class="item-id-value">2231</span></p>
-                            <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
-                            <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
-                            <div class="item-enterPrice">
-                                <input type="text" placeholder="Enter Bid.." class="item-enterPrice-input">
-                                <span><button class="item-enterBid">Bid</button></span>
-                            </div>
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
                         </div>
-
-                        <div class="w-100"></div>
-                        <div class="col item item-1 listings-items-comp">
-                        
-                            <img src="img/keyboard.png" alt="Keyboard" class="item_img">
-                            <p class="item-name">KY-1283 Keyboard 
-                                <span class="item-heart"><img src="img/heart.svg" alt="Add Favorite" class="item-heart-icon"></span>
-                            </p>
-                            <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
-                            <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
-                            <p class="item-id">ID : <span class="item-id-value">2231</span></p>
-                            <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
-                            <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
-                            <div class="item-enterPrice">
-                                <input type="text" placeholder="Enter Bid.." class="item-enterPrice-input">
-                                <span><button class="item-enterBid">Bid</button></span>
-                            </div>
-                        </div>
-                        <div class="col item item-1 listings-items-comp">
-                        
-                            <img src="img/keyboard.png" alt="Keyboard" class="item_img">
-                            <p class="item-name">KY-1283 Keyboard 
-                                <span class="item-heart"><img src="img/heart.svg" alt="Add Favorite" class="item-heart-icon"></span>
-                            </p>
-                            <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
-                            <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
-                            <p class="item-id">ID : <span class="item-id-value">2231</span></p>
-                            <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
-                            <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
-                            <div class="item-enterPrice">
-                                <input type="text" placeholder="Enter Bid.." class="item-enterPrice-input">
-                                <span><button class="item-enterBid">Bid</button></span>
-                            </div>
-                        </div>
-                        <div class="col item item-1 listings-items-comp">
-                            
-                            <img src="img/keyboard.png" alt="Keyboard" class="item_img">
-                            <p class="item-name">KY-1283 Keyboard 
-                                <span class="item-heart"><img src="img/heart.svg" alt="Add Favorite" class="item-heart-icon"></span>
-                            </p>
-                            <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
-                            <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
-                            <p class="item-id">ID : <span class="item-id-value">2231</span></p>
-                            <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
-                            <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
-                            <div class="item-enterPrice">
-                                <input type="text" placeholder="Enter Bid.." class="item-enterPrice-input">
-                                <span><button class="item-enterBid">Bid</button></span>
-                            </div>
-                        </div>
-
+                        <span><button class="item-display-btn">Display Item </button></span>
                     </div>
-                        
                 </div>
-                
-            
-            
+
+                <div class="bid">
+                    <img src="img/keyboard.png" alt="Keyboard" class="item_img">
+                    <p class="item-name">KY-1283 Keyboard</p>
+                    <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
+                    <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="#"><img src="img/edit.png" alt="Edit Listings"
+                                        class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+                </div>
+
+                <div class="bid">
+                    <img src="img/keyboard.png" alt="Keyboard" class="item_img">
+                    <p class="item-name">KY-1283 Keyboard</p>
+                    <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
+                    <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="#"><img src="img/edit.png" alt="Edit Listings"
+                                        class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+                </div>
+
+                <div class="bid">
+                    <img src="img/keyboard.png" alt="Keyboard" class="item_img">
+                    <p class="item-name">KY-1283 Keyboard</p>
+                    <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
+                    <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="#"><img src="img/edit.png" alt="Edit Listings"
+                                        class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+                </div>
+
+                <div class="bid">
+                    <img src="img/keyboard.png" alt="Keyboard" class="item_img">
+                    <p class="item-name">KY-1283 Keyboard</p>
+                    <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
+                    <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="#"><img src="img/edit.png" alt="Edit Listings"
+                                        class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+                </div>
+
+                <div class="bid">
+                    <img src="img/keyboard.png" alt="Keyboard" class="item_img">
+                    <p class="item-name">KY-1283 Keyboard</p>
+                    <p class="item-bid">Highest Bid :<span class="item-bid-value"> ₺219</span></p>
+                    <p class="item-totalbid">Total Bids :<span class="item-totalbid-value"> 4</span></p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">KeyMonster</span></p>
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="#"><img src="img/edit.png" alt="Edit Listings"
+                                        class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+                </div>
             </div>
-        
-        
         </div>
-    
-    
     </div>
-
-
 </body>

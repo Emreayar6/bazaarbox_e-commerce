@@ -1,11 +1,15 @@
-.big-picture{
+.big-picture {
     width: 600px;
     height: auto;
     border-right: 2px solid #c4c4c4;
 }
 
-.signin{
-    width: 58%;
+.login-section {
+    margin-top: 100px;
+}
+
+.signin {
+    width: 280px;
     height: 42px;
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
@@ -15,18 +19,21 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    margin-top: 8rem;
-    margin-left: -2rem;
+    transform: translateX(-10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    &_acc{
+    &_acc {
         font-size: 12px;
         margin-top: 2rem;
         float: right;
         font-weight: bold;
 
-        &-link{
+        &-link {
             color: #fc7a1e;
-            &:hover{
+
+            &:hover {
                 color: #fc7a1e;
                 cursor: pointer;
             }
@@ -35,7 +42,7 @@
 }
 
 
-.form{
+.form {
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     color: inherit;
@@ -44,30 +51,39 @@
     border: none;
     border-bottom: 3px solid transparent;
     margin-left: -2rem;
+    display: flex;
+    justify-content: center;
 
-    
     &-email,
-    &-password{
+    &-password {
         width: 65%;
         height: 40px;
         transition: all .3s;
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba(black, .5);
         }
+
         &:focus:invalid {
             border-bottom: 3px solid red;
         }
+
+        height: 40px;
+        border-radius: 4px;
+        padding: 0;
+        border: 1px solid #c4c4c4;
+        padding-left: 10px;
     }
 }
 
-.btn-signin{
+.btn-signin {
+
     &,
     &:link,
-    &:visited{
+    &:visited {
         width: 130px;
         height: 40px;
-        margin-left: 12rem;
         border-radius: 4px;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
@@ -81,22 +97,15 @@
         background-color: #2f2e41;
         transition: all .2s;
         border: none;
-        cursor:pointer;
+        cursor: pointer;
     }
-   
-    &:hover{
-        transform: translateY(-3px);
+
+    &:hover {
         box-shadow: 0 1rem 2rem rgba(black, .2);
 
-        &::after{
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;        
+        &::after {
+            opacity: 0;
         }
     }
 
 }
-
-
-
-
-

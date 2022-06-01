@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,44 +19,83 @@
 
 <body>
     <!-- Login Page Start -->
-    
+
     <div class="Header">
         <div class="Header-logobox">
             <img src="img/logo.png" alt="" class="Header__logo">
         </div>
     </div>
 
-    <div class="container">
+    <div class="container login-section">
         <div class="row">
-          <div class="col">
-            <img src="img/Signin.png" alt="Login Picture" class="big-picture">
+            <div class="col">
+                <img src="img/Signin.png" alt="Login Picture" class="big-picture">
+            </div>
+
+            <div class="col signinEra activeEra">
+                <div class="signin">
+                    Sign in <span class="signin_acc">or <a href="javascript:void(0);" id="createAccountButton"
+                            class="signin_acc-link">Create an Account</a></span>
+                </div>
+
+                <div class="form">
+                    <input type="email" class="form-email" placeholder="Email Address" id="email" required>
+                </div>
+
+                <div class="form">
+                    <input type="password" class="form-password" placeholder="Password" id="password" required>
+                </div>
+
+                <div class="btn">
+                    <button class="btn-signin" onclick="window.location.href = 'myProfile.html' ">
+                        Sign In
+                    </button>
+                </div>
+            </div>
+            <div class="col createAcc">
+
+                <img src="img/avatar1.png" alt="Profil Picture" class="profile">
+
+                <div class="form_createAcc">
+                    <input type="text" class="form_createAcc-name" placeholder="First Name" id="Fname" required>
+                </div>
+
+                <div class="form_createAcc">
+                    <input type="text" class="form_createAcc-lastName" placeholder="Last Name" id="Lname" required>
+                </div>
+
+                <div class="form_createAcc">
+                    <input type="text" class="form_createAcc-userName" placeholder="User Name" id="Uname" required>
+                </div>
+
+                <div class="form_createAcc">
+                    <input type="tel" class="form_createAcc-phone" placeholder="Phone Number"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                </div>
+
+                <div class="form_createAcc">
+                    <input type="email" class="form_createAcc-email" placeholder="Email Address" id="email" required>
+                </div>
+
+                <div class="form_createAcc">
+                    <input type="password" class="form_createAcc-password" placeholder="Password" id="password"
+                        required>
+                </div>
+
+                <div class="btn">
+                    <button class="btn_createAcc" onclick="window.location.href = 'myProfile.html' ">
+                        Create New Account
+                    </button>
+                    <span class="btn_signin">or <a id="switchSignIn" href="javascript:void(0);"
+                            class="btn_signin-link">Sign In</a></span>
+                </div>
+
+
+            </div>
         </div>
+        <!-- Login Page End -->
 
-        <div class="col">
-            <div class="signin">
-                Sign in <span class="signin_acc">or <a href="createAccount.html" class="signin_acc-link">Create an Account</a></span>
-            </div>
-
-            
-
-            <div class="form">
-                <input type="email" class="form-email" placeholder="Email Address" id="email" required>
-            </div>
-
-            <div class="form">
-                <input type="password" class="form-password" placeholder="Password" id="password" required>
-            </div>
-
-            <div class="btn">
-                <button class="btn-signin">
-                    Sign In
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- Login Page End -->
-
-    
+        <script src="js/main.js"></script>
 </body>
 
 </html>

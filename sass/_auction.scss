@@ -1,20 +1,20 @@
-.item{
+.item {
 
-    &-bid{
+    &-bid {
         padding-left: 2%;
         width: 100%;
         height: 20%;
         font-size: 12px;
         font-weight: bold;
 
-        &-value{
+        &-value {
             color: #fc7a1e;
             font-weight: normal;
         }
 
     }
 
-    &-totalbid{
+    &-totalbid {
         padding-left: 2%;
         width: 100%;
         height: 20%;
@@ -22,36 +22,36 @@
         font-weight: bold;
         margin-top: -2%;
 
-        &-value{
+        &-value {
             font-weight: normal;
         }
 
     }
 
-    &-enterPrice{
+    &-enterPrice {
         width: 100%;
         margin-left: 2%;
         margin-bottom: 4%;
 
-        &-input{
+        &-input {
             width: 80%;
             height: 35px;
             border-radius: 4px;
             border: solid 1px #c4c4c4;
             font-size: 16px;
-            
+
             &:focus:invalid {
                 border-bottom: 3px solid red;
             }
         }
     }
 
-    &-enterBid{
+    &-enterBid {
         width: 16%;
         height: 35px;
         border-radius: 4px;
         margin-bottom: 1%;
-        margin-left:-1.1% ;
+        margin-left: -1.1%;
         border: solid 1px #c4c4c4;
         background-color: #2f2e41;
         font-size: 16px;
@@ -59,21 +59,83 @@
         text-align: center;
         color: #fff;
 
-        
+
     }
 
-    &-heart{
-        margin-right: 2%;
-        
-        &-icon{
+    &-heart {
+        margin-right: 12px;
+
+        &-icon {
             width: 2rem;
             height: auto;
             transition: all .2s;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
             }
-           
+
+        }
+    }
+
+    &-display {
+        width: 260px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 25px;
+    }
+
+
+    &-display-btn {
+        width: 100px;
+        height: 35px;
+        border-radius: 4px;
+        border: solid 1px #c4c4c4;
+        background-color: #2f2e41;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 5px;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(black, .2);
+
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+    }
+
+    &-del-edit {
+        display: flex;
+        justify-content: flex-end;
+        gap: 25px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        align-items: center;
+    }
+
+    &-edit {
+        &-icon {
+            width: 2rem;
+            height: auto;
+            transform: all .2s;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-delete-icon {
+        width: 2rem;
+        height: auto;
+
+        &:hover {
+            cursor: pointer;
         }
     }
 

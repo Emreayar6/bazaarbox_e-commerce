@@ -1,3 +1,4 @@
+/*
 .messages{
     height: 100vh;
     margin: 2rem;
@@ -110,8 +111,101 @@
         justify-content: center;
     }
 
-   
+}*/
 
-    
 
+.message{
+    display: flex;
+    flex-direction: column !important;
+    background-color: #f6f6f6 !important;
+    border: none !important;
+
+    &-box{
+        width: 846px;
+        height: 276px;
+        border: 1px solid #c4c4c4;
+        border-radius: 8px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+        &:first-child{
+            margin-top: 25px;
+            margin-bottom: 45px;
+        }
+
+        &:last-child{
+            margin-bottom: 45px;
+        }
+
+        &-title{
+            width: 846px;
+            height: 39px;
+            padding: 0 393px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fd7a24;
+            margin-bottom: 0rem !important;
+            border-bottom: solid 1px #c4c4c4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-info{
+            width: 846px;
+            height: 40px;
+            margin: 0rem;
+            padding: 0 0 0 9px;
+            border-bottom: solid 1px #c4c4c4;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+
+        &-date,
+        &-name,
+        &-content{
+            align-self: center;
+            font-family:'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #2f2e41;
+            text-align: left;
+        }
+
+        &-trash{
+            width: 3vw;
+            height: auto;
+            margin: 12px 26px 12px 84px;
+            object-fit: contain;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        &-replybtn{
+            width: 99px;
+            height: 40px;
+            color: black;
+            background-color: inherit;
+            border-radius: 8px;
+
+            &:hover{
+                background-color: #2f2e41;
+                color: #c4c4c4;
+                cursor: pointer;
+            }
+        }
+    }
 }
+

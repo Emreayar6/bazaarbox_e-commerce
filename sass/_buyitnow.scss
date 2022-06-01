@@ -1,17 +1,18 @@
-.row_item{
-    width: 90%;
+.row_item {
+    width: 1140px;
     height: auto;
-    margin-left: 8rem ;
+    //padding-left: 3rem ;
+    //padding-top: 100px;
 }
 
 
-.item{
+.item {
     margin: 2rem;
     width: 20%;
-    height: 30%;
+    height: 312px;
     background-color: white;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     border-radius: 8px;
     padding: 0;
@@ -25,13 +26,15 @@
     display: flex;
     flex-direction: column;
 
-    &_img{
+    &_img {
         width: 100%;
         height: 140px;
-        border-radius: 8px;
+        //border-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
 
-    &-name{
+    &-name {
         padding-left: 2%;
         margin-top: 1rem;
         width: 100%;
@@ -43,7 +46,7 @@
         justify-content: space-between;
     }
 
-    &-price{
+    &-price {
         padding-left: 2%;
 
         width: 100%;
@@ -51,7 +54,7 @@
         font-size: 16px;
     }
 
-    &-id{
+    &-id {
         padding-left: 2%;
 
         width: 100%;
@@ -59,12 +62,12 @@
         font-size: 12px;
         font-weight: bold;
 
-        &-value{
+        &-value {
             font-weight: normal;
         }
     }
 
-    &-date{
+    &-date {
         width: 100%;
         padding-left: 2%;
 
@@ -73,12 +76,12 @@
         font-weight: bold;
         margin-top: -2.5%;
 
-        &-value{
+        &-value {
             font-weight: normal;
         }
     }
 
-    &-seller{
+    &-seller {
         padding-left: 2%;
 
         width: 90%;
@@ -89,22 +92,23 @@
         display: flex;
         align-items: center;
 
-        &-value{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        &-value {
+            //display: flex;
+            //justify-content: space-between;
+            //align-items: center;
             font-weight: normal;
         }
 
     }
 
-    &-btn-buyitnow{
+    &-btn-buyitnow {
         align-self: center;
         justify-content: center;
-        width: 95%;
+        width: 236px;
         height: 35px;
         border-radius: 4px;
         margin-bottom: 4%;
+        margin-left: 10px;
         border: solid 1px #c4c4c4;
         background-color: #2f2e41;
         font-size: 16px;
@@ -113,16 +117,15 @@
         color: #fff;
         transition: all .2s;
 
-        &:hover{
+        &:hover {
             transform: translateY(-3px);
             box-shadow: 0 1rem 2rem rgba(black, .2);
-    
-            &::after{
+
+            &::after {
                 transform: scaleX(1.4) scaleY(1.6);
-                opacity: 0;        
+                opacity: 0;
             }
         }
 
     }
 }
-
