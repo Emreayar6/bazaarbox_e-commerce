@@ -1028,9 +1028,10 @@ body {
 }
 
 .edit-name-form {
-  width: 250px;
+  width: 200px;
   height: 40px;
   margin-top: 2vh;
+  margin-left: 41px;
   border: solid 1px #c4c4c4;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -1058,9 +1059,10 @@ body {
 }
 
 .edit-price-form {
-  width: 250px;
+  width: 200px;
   height: 40px;
-  margin-top: 2vh;
+  margin-top: 3px;
+  margin-left: 78px;
   border: solid 1px #c4c4c4;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -1078,6 +1080,7 @@ body {
 }
 
 .edit-price-label {
+  width: 70px;
   font-family: Roboto;
   font-size: 20px;
   font-weight: normal;
@@ -1085,6 +1088,59 @@ body {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+}
+
+.edit-btn {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.edit-btn-btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  background-color: #2f2e41;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-img {
+  top: 100px !important;
+  left: 90px !important;
+  z-index: 10px !important;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit-picture-label {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-right: 10px;
 }
 
 .purchased-item-btn-disabled {
