@@ -62,11 +62,18 @@
     padding-left: 10px;
 }
 
+.message-contentt {
+    width: 841px;
+    display: flex;
+    flex-direction: row;
+
+}
+
 .message-content {
-    width: 700px;
-    height: 100px;
+    width: 697px;
+    height: 120px;
     margin-top: 3px;
-    margin-left: 128px;
+    margin-left: 15px;
     border: solid 1px black;
     font-family: 'Roboto',
         sans-serif;
@@ -81,5 +88,32 @@
     background-color: transparent;
     transition: all .2s;
     padding-left: 10px;
-    z-index: 10px;
+
+
+}
+
+.message-send {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+    &-btn {
+        width: 120px;
+        height: 40px;
+        border-radius: 4px;
+        margin-top: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        background-color: #2f2e41;
+        transition: all .2s;
+        border: none;
+        cursor: pointer;
+    }
 }

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Listings - BuyitNow</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <a href="myProfile.html"><img src="/img/logo.png" alt="bazzarbox logo"></a>
+        </div>
+    </div>
+
+    <div class="filter-search">
+        <div class="filter-search__filter">
+            <input type="checkbox" class="filter-search__filter__checkbox" id="BuyItNow" checked>
+            <label for="BuyItNow" class="filter-label">Buy It Now</label>
+        </div>
+
+        <div class="filter-search__filter">
+            <input type="checkbox" class="filter-search__filter__checkbox" id="Auction">
+            <label for="Auction" class="filter-label">Auction</label>
+        </div>
+
+        <div class="filter-search__search">
+            <input type="text" placeholder="Type for search.." class="filter-search__search-input">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="left-navigation left-navigation-new">
+                <a class="nav-item" href="myProfile.html">Profile</a>
+                <a class="nav-item" href="listings.html">All Listings</a>
+                <a class="nav-item" href="myMessages.html">My Messages</a>
+                <a class="nav-item" href="create-new-listing.html">Create New Listings</a>
+                <a class="nav-item active" href="myListings_buyitnow.html">My Listings</a>
+                <a class="nav-item" href="myPurchases.html">My Purchases</a>
+                <a class="nav-item" href="myBids.html">My Bids</a>
+                <a class="nav-item" href="myFavListings.html">My Favorite Listings</a>
+                <a class="nav-item" href="signIn.html">Sign Out</a>
+            </div>
+
+            <div class="right-content right-content-new">
+
+                <div class="left">
+                    <img src="img/analog-cam.jpg" alt="Analog Camera" class="item-edit_img">
+                </div>
+
+                <div class="item-info">
+                    <p class="item-name item-info-name">CMEHA SMENA</p>
+                    <p class="item-price item-info-price">Price : ₺730</p>
+                    <p class="item-id item-info-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date item-info-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller item-info-seller">Seller : <span class="item-seller-value">Creative
+                            Tools</span></p>
+
+                    <a href="replyMessages.html" class="contact-seller">Contact Seller</a>
+                </div>
+
+                <!-- 
+                <div class="bid">
+                    <img src="img/analog-cam.jpg" alt="Analog Camera" class="item_img">
+                    <p class="item-name">CMEHA SMENA</p>
+                    <p class="item-price">Price : ₺730</p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">Creative Tools</span></p>
+
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="edit_buyitnow.html"><img src="img/edit.png"
+                                        alt="Edit Listings" class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+
+
+
+                </div>
+
+                <div class="bid">
+                    <img src="img/analog-cam.jpg" alt="Analog Camera" class="item_img">
+                    <p class="item-name">CMEHA SMENA</p>
+                    <p class="item-price">Price : ₺730</p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">Creative Tools</span></p>
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="edit_buyitnow.html"><img src="img/edit.png"
+                                        alt="Edit Listings" class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+                </div>
+
+                <div class="bid">
+                    <img src="img/analog-cam.jpg" alt="Analog Camera" class="item_img">
+                    <p class="item-name">CMEHA SMENA</p>
+                    <p class="item-price">Price : ₺730</p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">Creative Tools</span></p>
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="edit_buyitnow.html"><img src="img/edit.png"
+                                        alt="Edit Listings" class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+                </div>
+
+                <div class="bid">
+                    <img src="img/analog-cam.jpg" alt="Analog Camera" class="item_img">
+                    <p class="item-name">CMEHA SMENA</p>
+                    <p class="item-price">Price : ₺730</p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">Creative Tools</span></p>
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="edit_buyitnow.html"><img src="img/edit.png"
+                                        alt="Edit Listings" class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+                </div>
+
+                <div class="bid">
+                    <img src="img/analog-cam.jpg" alt="Analog Camera" class="item_img">
+                    <p class="item-name">CMEHA SMENA</p>
+                    <p class="item-price">Price : ₺730</p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">Creative Tools</span></p>
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="edit_buyitnow.html"><img src="img/edit.png"
+                                        alt="Edit Listings" class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+                </div>
+
+                <div class="bid">
+                    <img src="img/analog-cam.jpg" alt="Analog Camera" class="item_img">
+                    <p class="item-name">CMEHA SMENA</p>
+                    <p class="item-price">Price : ₺730</p>
+                    <p class="item-id">ID : <span class="item-id-value">2231</span></p>
+                    <p class="item-date">Date : <span class="item-date-value">05.04.2022</span></p>
+                    <p class="item-seller">Seller : <span class="item-seller-value">Creative Tools</span></p>
+                    <div class="item-display">
+
+                        <div class="item-del-edit">
+                            <span class="item-edit"><a href="edit_buyitnow.html"><img src="img/edit.png"
+                                        alt="Edit Listings" class="item-edit-icon"></a></span>
+
+                            <span class="item-delete"><a href="#"><img src="img/delete.png" alt="Delete Item"
+                                        class="item-delete-icon"></a></span>
+                        </div>
+                        <span><button class="item-display-btn">Display Item </button></span>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</body>

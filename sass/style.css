@@ -1563,15 +1563,12 @@ body {
   padding-left: 10px;
 }
 
-.message-contentt {
-  width: 841px;
+.message-content {
+  width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  background-color: red;
 }
 
 .message-content {
@@ -1594,66 +1591,4 @@ body {
   transition: all .2s;
   padding-left: 10px;
 }
-
-.message-send {
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.message-send-btn {
-  width: 120px;
-  height: 40px;
-  border-radius: 4px;
-  margin-top: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #fff;
-  background-color: #2f2e41;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border: none;
-  cursor: pointer;
-}
-
-.item-info {
-  width: 400px;
-  height: auto;
-}
-
-.item-info-name {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.item-info-price {
-  font-size: 20px;
-}
-
-.item-info-id, .item-info-date, .item-info-seller {
-  font-size: 16px;
-}
-
-.contact-seller {
-  color: orangered;
-  text-align: right;
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  padding-left: 9px;
-}
+/*# sourceMappingURL=style.css.map */
