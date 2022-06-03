@@ -27,12 +27,14 @@
 
     <div class="filter-search">
         <div class="filter-search__filter">
-            <input type="checkbox" class="filter-search__filter__checkbox" id="BuyItNow">
+            <input type="checkbox" class="filter-search__filter__checkbox" id="BuyItNow" rel="buyitnow"
+                onchange="change()">
             <label for="BuyItNow" class="filter-label">Buy It Now</label>
         </div>
 
         <div class="filter-search__filter">
-            <input type="checkbox" class="filter-search__filter__checkbox" id="Auction">
+            <input type="checkbox" class="filter-search__filter__checkbox" id="Auction" rel="auction"
+                onchange="change()">
             <label for="Auction" class="filter-label">Auction</label>
         </div>
 
