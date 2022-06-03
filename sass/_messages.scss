@@ -114,13 +114,13 @@
 }*/
 
 
-.message{
+.message {
     display: flex;
     flex-direction: column !important;
     background-color: #f6f6f6 !important;
     border: none !important;
 
-    &-box{
+    &-box {
         width: 846px;
         height: 276px;
         border: 1px solid #c4c4c4;
@@ -131,16 +131,16 @@
         flex-wrap: wrap;
         align-content: flex-start;
 
-        &:first-child{
+        &:first-child {
             margin-top: 25px;
             margin-bottom: 45px;
         }
 
-        &:last-child{
+        &:last-child {
             margin-bottom: 45px;
         }
 
-        &-title{
+        &-title {
             width: 846px;
             height: 39px;
             padding: 0 393px;
@@ -155,7 +155,7 @@
             align-items: center;
         }
 
-        &-info{
+        &-info {
             width: 846px;
             height: 40px;
             margin: 0rem;
@@ -165,14 +165,14 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            
+
         }
 
         &-date,
         &-name,
-        &-content{
+        &-content {
             align-self: center;
-            font-family:'Roboto', sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 12px;
             font-weight: 300;
             font-stretch: normal;
@@ -183,24 +183,25 @@
             text-align: left;
         }
 
-        &-trash{
+        &-trash {
             width: 3vw;
             height: auto;
             margin: 12px 26px 12px 84px;
             object-fit: contain;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
             }
         }
 
-        &-replybtn{
+        &-replybtn {
             width: 99px;
             height: 40px;
             color: black;
             background-color: inherit;
             border-radius: 8px;
 
-            &:hover{
+            &:hover {
                 background-color: #2f2e41;
                 color: #c4c4c4;
                 cursor: pointer;
@@ -208,4 +209,3 @@
         }
     }
 }
-
